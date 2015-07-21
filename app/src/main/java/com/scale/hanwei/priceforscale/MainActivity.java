@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +18,7 @@ import java.util.HashMap;
 public class MainActivity extends ActionBarActivity {
 
     GridView mGridView;
+    TextView test;//test for version control
 
     static final String[] scaleKind = { "tablescale", "platformscale", "eletronicbalance", "hangscale",
                                         "groundscale", "weightdisplay", "mechscale", "loadcell",
