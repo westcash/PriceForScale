@@ -18,7 +18,7 @@ import java.util.HashMap;
 public class MainActivity extends ActionBarActivity {
 
     GridView mGridView;
-    TextView test;//test for version control
+    TextView test;//test for version control test
 
     static final String[] scaleKind = { "tablescale", "platformscale", "eletronicbalance", "hangscale",
                                         "groundscale", "weightdisplay", "mechscale", "loadcell",
