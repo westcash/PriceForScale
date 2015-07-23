@@ -2,6 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.scale.hanwei.priceforscale.SpecActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    <item android:id="@+id/action_add_info" android:title="新增說明"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_add_spec" android:title="新增規格"
+        android:orderInCategory="101" app:showAsAction="never" />
+    <item android:id="@+id/action_add_spec_price" android:title="新增規格和價錢"
+        android:orderInCategory="102" app:showAsAction="never" />
 </menu>

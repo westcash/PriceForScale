@@ -64,7 +64,7 @@ public class ModelActivity extends ActionBarActivity {
 
                         Intent intentStartSpecActivity = new Intent(ModelActivity.this,SpecActivity.class);
                         intentStartSpecActivity.putExtra("ModelName",item);
-                        intentStartSpecActivity.putExtra("KindUsing",kindUsing);
+                        intentStartSpecActivity.putExtra("kindUsing",kindUsing);
                         intentStartSpecActivity.putExtra("kindUsingEnglish",kindUsingEnglish);
                         ModelActivity.this.startActivity(intentStartSpecActivity);
                     }//the end of onItemClick

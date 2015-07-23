@@ -36,14 +36,16 @@ public class ModelDataSource {
         Cursor cursor;
         ContentValues values = new ContentValues();
 
+        String CorrectTableName = "[" + tableName + "]";
+
         values.put(COLUMN_MODEL, model);
 
-        long insertId = database.insert(tableName, null,
+        long insertId = database.insert(CorrectTableName, null,
                 values);
 
         if(!(insertId == -1)) {
 
-                cursor = database.query(tableName,
+                cursor = database.query(CorrectTableName,
                         allColumns_model, COLUMN_ID + " = " + insertId, null,
                         null, null, null);
             cursor.moveToFirst();
@@ -60,15 +62,16 @@ public class ModelDataSource {
     //刪除物件
     public void deleteModel(Model model,String tableName) {
         long id = model.getId();
-        database.delete(tableName, COLUMN_ID
+        String CorrectTableName = "[" + tableName + "]";
+        database.delete(CorrectTableName, COLUMN_ID
                 + " = " + id, null);
     }
 
     public List<Model> getAllModels(String tableName) {
         Cursor cursor;
         List<Model> models = new ArrayList<Model>();
-
-        cursor = database.query(tableName,
+        String CorrectTableName = "[" + tableName + "]";
+        cursor = database.query(CorrectTableName,
                     allColumns_model, null, null, null, null, null);
 
         cursor.moveToFirst();
@@ -103,7 +106,8 @@ public class ModelDataSource {
 
     //刪除Table
     public void deleteTableInDatabase(String tableName){
-        database.execSQL("DROP TABLE IF EXISTS " + tableName);
+        String CorrectTableName = "[" + tableName + "]";
+        database.execSQL("DROP TABLE IF EXISTS " + CorrectTableName);
     }
 
 }

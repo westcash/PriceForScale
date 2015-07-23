@@ -23,11 +23,30 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true" />
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="@color/material_blue_grey_800"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
         android:id="@+id/button"
-        android:layout_below="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView" />
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:id="@+id/mListViewForSpec"
+        android:dividerHeight="15dp"
+        android:divider="@color/material_blue_grey_800"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

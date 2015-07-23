@@ -2,6 +2,7 @@
     <string name="app_name">價格查詢系統</string>
     <string name="action_settings">Settings</string>
     <string name="action_add_model">新增型號</string>
+    <string name="action_add_spec">新增規格</string>
     <string name="title_activity_function_sort_">functionSort_Activity</string>
 
     <string name="hello_world">Hello world!</string>
